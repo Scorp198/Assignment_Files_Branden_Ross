@@ -22,6 +22,7 @@ namespace FileAssignment
             InitializeComponent();
         }
 
+<<<<<<< HEAD
         private void InputForm_Load(object sender, EventArgs e)
         {
             //shows a open file dialog and prompts the user to select a file
@@ -143,3 +144,13 @@ namespace FileAssignment
         }//End of btnClear_Click
     }//End of Class
 }//End of Namespace
+=======
+        private void btnDone_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            OutputForm output = new OutputForm();
+            output.ShowDialog();
+        }
+    }
+}
+>>>>>>> origin/master
