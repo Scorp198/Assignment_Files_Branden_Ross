@@ -8,3 +8,13 @@ C:\Users\Branden\Desktop\COPA Term 3\Rapid Application Development\FileAssignmen
 C:\Users\Branden\Desktop\COPA Term 3\Rapid Application Development\FileAssignment\FileAssignment\obj\Debug\FileAssignment.csproj.GenerateResource.Cache
 C:\Users\Branden\Desktop\COPA Term 3\Rapid Application Development\FileAssignment\FileAssignment\obj\Debug\FileAssignment.exe
 C:\Users\Branden\Desktop\COPA Term 3\Rapid Application Development\FileAssignment\FileAssignment\obj\Debug\FileAssignment.pdb
+C:\Users\Ross\Documents\GitHub\Assignment_Files_Branden_Ross\FileAssignment\FileAssignment\bin\Debug\FileAssignment.exe.config
+C:\Users\Ross\Documents\GitHub\Assignment_Files_Branden_Ross\FileAssignment\FileAssignment\obj\Debug\FileAssignment.exe
+C:\Users\Ross\Documents\GitHub\Assignment_Files_Branden_Ross\FileAssignment\FileAssignment\obj\Debug\FileAssignment.pdb
+C:\Users\Ross\Documents\GitHub\Assignment_Files_Branden_Ross\FileAssignment\FileAssignment\bin\Debug\FileAssignment.exe
+C:\Users\Ross\Documents\GitHub\Assignment_Files_Branden_Ross\FileAssignment\FileAssignment\bin\Debug\FileAssignment.pdb
+C:\Users\Ross\Documents\GitHub\Assignment_Files_Branden_Ross\FileAssignment\FileAssignment\obj\Debug\FileAssignment.csprojResolveAssemblyReference.cache
+C:\Users\Ross\Documents\GitHub\Assignment_Files_Branden_Ross\FileAssignment\FileAssignment\obj\Debug\FileAssignment.InputForm.resources
+C:\Users\Ross\Documents\GitHub\Assignment_Files_Branden_Ross\FileAssignment\FileAssignment\obj\Debug\FileAssignment.OutputForm.resources
+C:\Users\Ross\Documents\GitHub\Assignment_Files_Branden_Ross\FileAssignment\FileAssignment\obj\Debug\FileAssignment.Properties.Resources.resources
+C:\Users\Ross\Documents\GitHub\Assignment_Files_Branden_Ross\FileAssignment\FileAssignment\obj\Debug\FileAssignment.csproj.GenerateResource.Cache

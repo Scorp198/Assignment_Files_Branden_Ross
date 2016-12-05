@@ -29,18 +29,20 @@
         private void InitializeComponent()
         {
             this.grpEmployeeInfo = new System.Windows.Forms.GroupBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
+            this.txtHoursWorked = new System.Windows.Forms.TextBox();
+            this.txtEmployeeNumber = new System.Windows.Forms.TextBox();
+            this.txtEmployeeName = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.btnSave = new System.Windows.Forms.Button();
             this.btnClear = new System.Windows.Forms.Button();
             this.btnDone = new System.Windows.Forms.Button();
             this.btnExit = new System.Windows.Forms.Button();
-            this.txtEmployeeName = new System.Windows.Forms.TextBox();
-            this.txtEmployeeNumber = new System.Windows.Forms.TextBox();
-            this.txtHoursWorked = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
+            this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
+            this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
             this.grpEmployeeInfo.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -57,16 +59,37 @@
             this.grpEmployeeInfo.Size = new System.Drawing.Size(297, 154);
             this.grpEmployeeInfo.TabIndex = 0;
             this.grpEmployeeInfo.TabStop = false;
-            this.grpEmployeeInfo.Text = "Please provide the employeeès information";
+            this.grpEmployeeInfo.Text = "Please provide the employee\'s information";
             // 
-            // label1
+            // txtHoursWorked
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(15, 27);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(84, 13);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "Employee &Name";
+            this.txtHoursWorked.Location = new System.Drawing.Point(130, 100);
+            this.txtHoursWorked.Name = "txtHoursWorked";
+            this.txtHoursWorked.Size = new System.Drawing.Size(42, 20);
+            this.txtHoursWorked.TabIndex = 6;
+            // 
+            // txtEmployeeNumber
+            // 
+            this.txtEmployeeNumber.Location = new System.Drawing.Point(130, 62);
+            this.txtEmployeeNumber.Name = "txtEmployeeNumber";
+            this.txtEmployeeNumber.Size = new System.Drawing.Size(74, 20);
+            this.txtEmployeeNumber.TabIndex = 5;
+            // 
+            // txtEmployeeName
+            // 
+            this.txtEmployeeName.Location = new System.Drawing.Point(130, 24);
+            this.txtEmployeeName.Name = "txtEmployeeName";
+            this.txtEmployeeName.Size = new System.Drawing.Size(161, 20);
+            this.txtEmployeeName.TabIndex = 4;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(15, 103);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(76, 13);
+            this.label3.TabIndex = 3;
+            this.label3.Text = "&Hours Worked";
             // 
             // label2
             // 
@@ -77,14 +100,14 @@
             this.label2.TabIndex = 2;
             this.label2.Text = "Employee N&umber";
             // 
-            // label3
+            // label1
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(15, 103);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(76, 13);
-            this.label3.TabIndex = 3;
-            this.label3.Text = "&Hours Worked";
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(15, 27);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(84, 13);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "Employee &Name";
             // 
             // label4
             // 
@@ -104,15 +127,17 @@
             this.btnSave.TabIndex = 4;
             this.btnSave.Text = "&Save";
             this.btnSave.UseVisualStyleBackColor = true;
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
             // btnClear
             // 
-            this.btnClear.Location = new System.Drawing.Point(103, 232);
+            this.btnClear.Location = new System.Drawing.Point(93, 232);
             this.btnClear.Name = "btnClear";
             this.btnClear.Size = new System.Drawing.Size(75, 23);
             this.btnClear.TabIndex = 5;
             this.btnClear.Text = "&Clear";
             this.btnClear.UseVisualStyleBackColor = true;
+            this.btnClear.Click += new System.EventHandler(this.btnClear_Click);
             // 
             // btnDone
             // 
@@ -122,6 +147,7 @@
             this.btnDone.TabIndex = 6;
             this.btnDone.Text = "&Done";
             this.btnDone.UseVisualStyleBackColor = true;
+            this.btnDone.Click += new System.EventHandler(this.btnDone_Click);
             // 
             // btnExit
             // 
@@ -131,27 +157,7 @@
             this.btnExit.TabIndex = 7;
             this.btnExit.Text = "&Exit";
             this.btnExit.UseVisualStyleBackColor = true;
-            // 
-            // txtEmployeeName
-            // 
-            this.txtEmployeeName.Location = new System.Drawing.Point(130, 24);
-            this.txtEmployeeName.Name = "txtEmployeeName";
-            this.txtEmployeeName.Size = new System.Drawing.Size(161, 20);
-            this.txtEmployeeName.TabIndex = 4;
-            // 
-            // txtEmployeeNumber
-            // 
-            this.txtEmployeeNumber.Location = new System.Drawing.Point(130, 62);
-            this.txtEmployeeNumber.Name = "txtEmployeeNumber";
-            this.txtEmployeeNumber.Size = new System.Drawing.Size(74, 20);
-            this.txtEmployeeNumber.TabIndex = 5;
-            // 
-            // txtHoursWorked
-            // 
-            this.txtHoursWorked.Location = new System.Drawing.Point(130, 100);
-            this.txtHoursWorked.Name = "txtHoursWorked";
-            this.txtHoursWorked.Size = new System.Drawing.Size(42, 20);
-            this.txtHoursWorked.TabIndex = 6;
+            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
             // label5
             // 
@@ -163,13 +169,18 @@
             this.label5.TabIndex = 8;
             this.label5.Text = "Branden Shirriff, Ross Keddy";
             // 
+            // openFileDialog1
+            // 
+            this.openFileDialog1.CheckFileExists = false;
+            this.openFileDialog1.FileName = "openFileDialog1";
+            // 
             // InputForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.AutoValidate = System.Windows.Forms.AutoValidate.Disable;
-            this.ClientSize = new System.Drawing.Size(372, 294);
+            this.ClientSize = new System.Drawing.Size(361, 285);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.btnExit);
             this.Controls.Add(this.btnDone);
@@ -183,6 +194,7 @@
             this.Name = "InputForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Input Form";
+            this.Load += new System.EventHandler(this.InputForm_Load);
             this.grpEmployeeInfo.ResumeLayout(false);
             this.grpEmployeeInfo.PerformLayout();
             this.ResumeLayout(false);
@@ -205,6 +217,8 @@
         private System.Windows.Forms.TextBox txtEmployeeNumber;
         private System.Windows.Forms.TextBox txtEmployeeName;
         private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.OpenFileDialog openFileDialog1;
+        private System.Windows.Forms.SaveFileDialog saveFileDialog1;
     }
 }
 
