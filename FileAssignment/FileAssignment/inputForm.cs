@@ -16,5 +16,12 @@ namespace FileAssignment
         {
             InitializeComponent();
         }
+
+        private void btnDone_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            OutputForm output = new OutputForm();
+            output.ShowDialog();
+        }
     }
 }
